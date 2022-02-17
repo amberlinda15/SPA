@@ -12,12 +12,14 @@
     <body ng-app="myApp">
         <div class="navbar_cont">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#!page1">Page 1</a></li>
-                <li><a href="#!page2">Page 2</a></li>
+                <!-- <li><a href="#!/">Home</a></li> -->
+                <li><a href="#!/page1">Page 1</a></li>
+                <li><a href="#!/page2">Page 2</a></li>
+                <li><a href="#!/page3">Page 3</a></li>
             </ul>
         </div>
-        <h1>Main</h1>
+        <h1 style="text-transform: uppercase;text-align: center;margin: 30px auto;">Angular routing</h1>
+        <ng-view></ng-view>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
         <script src="./res/script.js"></script>

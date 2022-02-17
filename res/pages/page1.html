@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <head>
-            <title>Angular</title>
-            <link rel="stylesheet" href="./res/index.css"/>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
-        </head>
-    </head>
-    <body ng-app="myApp">
-        <div >
-            <h1>page1 page</h1>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
-        <script src="./res/script.js"></script>
-    </body>
-</html>
+<table class="json_table">
+    <tr>
+        <th>Member id</th>
+        <th>Team id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Mobile number</th>
+        <th>Email</th>
+        <th>Gender</th>
+    </tr>
+    <tr ng-repeat="tm in teammembers">
+        <td>{{tm.member_id}}</td>
+        <td>{{tm.team_id}}</td>
+        <td>{{tm.first_name}}</td>
+        <td>{{tm.last_name}}</td>
+        <td>{{tm.mobile_number}}</td>
+        <td>{{tm.email}}</td>
+        <td>{{tm.gender}}</td>
+    </tr>
+</table>

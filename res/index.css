@@ -37,3 +37,14 @@ body,html{
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.json_table{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.json_table th,
+.json_table td{
+    padding: 10px;
+    border: 1px solid #000;
+}
